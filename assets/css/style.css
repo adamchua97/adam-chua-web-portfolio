@@ -238,7 +238,7 @@ p { color: var(--text-muted); }
 }
 .highlight .label {
   font-size: 0.85rem;
-  color: var(--text-faint);
+  color: var(--text-muted);
 }
 @media (min-width: 640px) {
   .highlights { grid-template-columns: repeat(4, 1fr); }
