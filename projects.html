@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Projects — Adam Chua</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="16 data, analytics, and business intelligence projects by Adam Chua — from graduate data modeling and NLP work to undergraduate BI and forecasting projects." />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232451e0'/%3E%3Ctext x='50' y='67' font-size='44' font-family='sans-serif' fill='white' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+	<header class="site-header">
+		<nav class="nav">
+			<a href="index.html" class="nav-brand">Adam Chua</a>
+			<ul class="nav-links" id="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html" aria-current="page">Projects</a></li>
+			</ul>
+			<div class="nav-cta">
+				<a href="assets/resume/Adam-Chua-Resume.pdf" class="btn btn-secondary" download>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="M8 10l4 4 4-4"/><path d="M5 18h14"/></svg>
+					Résumé
+				</a>
+				<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="section--tight">
+			<div class="container">
+				<span class="eyebrow">Portfolio</span>
+				<h1 style="margin-top:8px;">Projects</h1>
+				<p class="lede" style="margin-top:16px;">
+					Sixteen projects spanning graduate-level data modeling and NLP research to undergraduate business
+					intelligence and forecasting work. Cards marked <strong>Details</strong> expand with the full
+					methodology and key result.
+				</p>
+			</div>
+		</section>
+
+		<section class="section" style="padding-top:8px;">
+			<div class="container">
+				<div class="filter-bar" role="group" aria-label="Filter projects by category">
+					<button class="filter-pill" data-filter="all" aria-pressed="true">All Projects</button>
+					<button class="filter-pill" data-filter="data-engineering" aria-pressed="false">Data Engineering</button>
+					<button class="filter-pill" data-filter="ml-nlp" aria-pressed="false">Machine Learning &amp; NLP</button>
+					<button class="filter-pill" data-filter="bi" aria-pressed="false">Business Intelligence</button>
+					<button class="filter-pill" data-filter="strategy" aria-pressed="false">Business Strategy</button>
+				</div>
+
+				<div class="project-grid">
+
+					<!-- 1: SQL Data Warehouse -->
+					<article class="card project-card" id="sql-data-warehouse" data-category="data-engineering">
+						<div class="project-media">
+							<img src="assets/images/dwh_architecture_drawio.png" alt="Medallion architecture diagram for the SQL data warehouse project" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Data Engineering</span>
+							<h3>SQL Data Warehouse for BI &amp; Analytics</h3>
+							<p>End-to-end SQL data warehouse built on Medallion Architecture — Bronze (raw ingestion), Silver (cleansing), and Gold (business-ready star schema) layers, with ETL pipelines and fact/dimension tables optimized for analytical queries.</p>
+							<div class="tech-tags"><span class="tech-tag">MS SQL</span><span class="tech-tag">ETL</span><span class="tech-tag">Star Schema</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/sql-data-wh-project" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 2: Supply Chain Data Modeling (flagship) -->
+					<article class="card project-card" id="supply-chain-model" data-category="data-engineering">
+						<div class="project-media project-media--icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg>
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Data Engineering</span>
+							<h3>Supply Chain Database Design &amp; Data Modeling</h3>
+							<p>Owned Phase 1 (data prep, business rules, ER modeling) of a graduate database design project, designing an 11-entity relational schema for a 180,000-row global supply chain dataset in MySQL Workbench.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">MySQL Workbench</span><span class="tech-tag">Data Modeling</span></div>
+							<div class="project-footer">
+								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+							</div>
+							<div class="project-details" hidden>
+								<div class="project-details-inner">
+									<ul>
+										<li>Led end-to-end data preparation in Python/Jupyter for a 53-column dataset, resolving encoding errors and standardizing schema conventions.</li>
+										<li>Diagnosed and resolved data ambiguity in financial fields by reverse-engineering calculation logic before finalizing the schema.</li>
+										<li>Designed a many-to-many junction entity and a database-enforced weak entity relationship (UNIQUE constraint), introducing surrogate keys for entities lacking natural keys.</li>
+										<li>Authored complete business rules and a full data dictionary covering entity integrity, referential integrity, cardinality, and data type standards.</li>
+									</ul>
+									<div class="project-result"><strong>Result:</strong> Reduced the dataset from 53 to 42 columns with zero information loss, and delivered a complete handoff package that became the foundation for the team's database, warehouse, and BI deliverables.</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- 3: German Credit Risk Classification (flagship) -->
+					<article class="card project-card" id="credit-risk" data-category="ml-nlp">
+						<div class="project-media project-media--icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg>
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>German Credit Risk Classification</h3>
+							<p>Built and evaluated three classification models (logistic regression, decision tree, neural network) in R to predict credit risk under a cost-sensitive framework, as lead technical contributor on a graduate data mining case study.</p>
+							<div class="tech-tags"><span class="tech-tag">R</span><span class="tech-tag">caret</span><span class="tech-tag">Cost-Sensitive ML</span></div>
+							<div class="project-footer">
+								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+							</div>
+							<div class="project-details" hidden>
+								<div class="project-details-inner">
+									<ul>
+										<li>Designed a cost-sensitive evaluation framework reflecting a real 5:1 asymmetry between false-positive and true-positive outcomes — all three models were unprofitable at a standard threshold despite 69–75% accuracy.</li>
+										<li>Built a decile-wise lift chart to identify a profit-maximizing approval cutoff, approving only the top 40% of ranked applicants.</li>
+										<li>Applied stepwise feature selection, reducing the model from 30 to 19 predictors while improving both statistical fit and net profit.</li>
+										<li>Flagged fair-lending/ethical concerns in the dataset's demographic variables and incorporated them into the final recommendation.</li>
+									</ul>
+									<div class="project-result"><strong>Result:</strong> Converted a −4,600 DM loss into a ~+6,000 DM profit by optimizing the decision threshold — without changing the underlying model.</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- 4: Reddit NLP Preprocessing Pipeline (flagship) -->
+					<article class="card project-card" id="nlp-pipeline" data-category="ml-nlp">
+						<div class="project-media project-media--icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>Reddit NLP Preprocessing Pipeline</h3>
+							<p>Designed and built a two-stage text preprocessing pipeline (Python, pandas, spaCy, NLTK) that transformed ~720,000 raw, noisy Reddit records into ~507,000 clean, analysis-ready records for a graduate text-mining project.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">spaCy</span><span class="tech-tag">NLTK</span></div>
+							<div class="project-footer">
+								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+							</div>
+							<div class="project-details" hidden>
+								<div class="project-details-inner">
+									<ul>
+										<li>Sequenced cheap filters ahead of expensive operations (language detection, lemmatization) for efficiency at 700K-record scale.</li>
+										<li>Identified a filler-word problem through dedicated validation and designed a second refinement stage without a full pipeline re-run.</li>
+										<li>Produced two purpose-built text representations per record — one for embedding/sentiment models, one for TF-IDF/clustering — instead of a single compromise output.</li>
+										<li>Built a dedicated validation stage (null audits, token frequency review, noise scans) that directly drove the pipeline's refinement.</li>
+									</ul>
+									<div class="project-result"><strong>Result:</strong> Delivered 74.3% record retention on comments and 35.8% on posts, with full documentation, data dictionaries, and reusable notebooks for team handoff.</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- 5: Reddit Sentiment Analysis (flagship) -->
+					<article class="card project-card" id="sentiment-analysis" data-category="ml-nlp">
+						<div class="project-media project-media--icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21l4-4h5"/></svg>
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>Reddit Sentiment Analysis</h3>
+							<p>Applied and evaluated four sentiment analysis methods (TextBlob, VADER, Twitter-RoBERTa, multilingual BERT) across a 498,147-comment Reddit corpus as the sentiment analysis component owner on a graduate text-mining project.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Hugging Face</span></div>
+							<div class="project-footer">
+								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+							</div>
+							<div class="project-details" hidden>
+								<div class="project-details-inner">
+									<ul>
+										<li>Uncovered a 40-percentage-point disagreement in negative-sentiment classification across methods on identical text.</li>
+										<li>Diagnosed and corrected two hidden model biases — a dictionary-miss artifact inflating lexicon "neutral" labels by 4–50x, and a structurally biased star-rating conversion affecting 11.9% of transformer outputs.</li>
+										<li>Designed a bias-resistant, blind human-evaluation benchmark to select the most accurate model, rather than trusting any model's self-reported confidence.</li>
+										<li>Engineered a resumable, checkpointed GPU inference pipeline (Google Colab, PyTorch, Hugging Face Transformers) to process the full corpus with fault tolerance.</li>
+									</ul>
+									<div class="project-result"><strong>Result:</strong> Selected Twitter-RoBERTa as the most accurate model (70.0% accuracy, statistically significant over three alternatives) and combined it with topic modeling to identify a 27.8-point sentiment gap across discussion themes.</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- 6: Employee Attrition Analysis -->
+					<article class="card project-card" id="employee-attrition" data-category="ml-nlp">
+						<div class="project-media">
+							<img src="assets/images/dept_att.png" alt="Employee attrition analysis dashboard preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>Employee Attrition Analysis</h3>
+							<p>Analyzed employee attrition data to identify turnover factors using Python and Spark on AWS for big-data analytics and predictive modeling (Logistic Regression, Random Forest, K-Means Clustering), summarized into strategies to help HR address attrition risk.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Spark</span><span class="tech-tag">AWS</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/Employee-Attrition-Analysis-BigData-Spark-Project" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 7: Crypto ML -->
+					<article class="card project-card" id="crypto-ml" data-category="ml-nlp">
+						<div class="project-media">
+							<img src="assets/images/bin_bal_classifier.png" alt="Crypto classifier model output preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>Crypto Investing Recommender Algorithms</h3>
+							<p>Applied and compared various machine learning algorithms to classify and predict price surges (and precursor states) in cryptocurrencies, to support smart, timely investment decision-making.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Scikit-Learn</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/crypto-market-machine-learning" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 8: Boeing Text Mining -->
+					<article class="card project-card" id="boeing-text-mining" data-category="ml-nlp">
+						<div class="project-media">
+							<img src="assets/images/boeing_txt.png" alt="Boeing aircraft corrosion text mining analysis preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<h3>Boeing Text Mining Project</h3>
+							<p>Developed a text mining analysis using a large language model to derive insights from aircraft maintenance records focused on corrosion data, highlighting corrosion distribution across aircraft structures.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">LLM</span></div>
+							<div class="project-footer">
+								<a href="https://docs.google.com/presentation/d/1q8RNRjBE8KPqvrqVum1Xc-LjKniLBKY6RBAc4TIODqw/edit?usp=sharing" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 9: HR Analytics -->
+					<article class="card project-card" id="hr-analytics" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/hr_dashb.png" alt="Human resources analytics dashboard preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>Human Resources Analytics</h3>
+							<p>Queried employee health and absenteeism data from an HR database to determine eligibility for incentive programs, and built a dashboard using absenteeism as the primary KPI to surface related workforce trends.</p>
+							<div class="tech-tags"><span class="tech-tag">SQL</span><span class="tech-tag">Dashboarding</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/human_resources_analytics_project" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 10: SCE Forecasting -->
+					<article class="card project-card" id="sce-forecasting" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/sce_forecast_25.png" alt="SoCal Edison energy demand forecast preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>SoCal Edison Forecasting Energy Demand</h3>
+							<p>Forecasted and analyzed energy consumption trends for SoCal Edison customers using the SARIMAX method in Python, projecting usage for 2025 Q1–Q4 by county with strategies for resource allocation and energy savings.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Tableau</span><span class="tech-tag">SARIMAX</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/sce-forecasting-energy-demand-analysis" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 11: Geospatial Analysis -->
+					<article class="card project-card" id="geospatial-analysis" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/location_analysis.png" alt="Geospatial suitability analysis map preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>Geospatial Analysis for Premium Business Locations</h3>
+							<p>Used ArcGIS tools and Esri data to perform demographic and spatial analysis, identifying optimal Orange County locations for premium health grocery stores through a suitability-score model.</p>
+							<div class="tech-tags"><span class="tech-tag">ArcGIS</span><span class="tech-tag">Esri</span></div>
+							<div class="project-footer">
+								<a href="https://storymaps.arcgis.com/stories/b0e994234ab949f2b6ae4730088ab826" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 12: Job Market Analysis -->
+					<article class="card project-card" id="job-market-analysis" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/top_demanded_skills_remote.png" alt="Data analyst job market skills analysis preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>Data Analyst Job Market Analysis</h3>
+							<p>Analyzed the Data Analyst job market to identify the highest-paying roles and their associated skills, using advanced SQL for querying and Power BI to visualize the most in-demand, optimal skills.</p>
+							<div class="tech-tags"><span class="tech-tag">SQL</span><span class="tech-tag">Power BI</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/SQL_Project_Data_Job_Analysis" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 13: Maven Roasters -->
+					<article class="card project-card" id="maven-roasters" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/prod_cat_sales.jpg" alt="Maven Roasters sales analysis chart preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>Maven Roasters Co. Sales Analysis</h3>
+							<p>Performed time-series and comparative analysis on six months of sales data to identify trends and best/worst-selling products, forecasting the next 30 days of sales using ARIMA.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">ARIMA</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/maven-roasters-coffee-sales-analysis" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 14: Cost of Living -->
+					<article class="card project-card" id="cost-of-living" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/us_cola23.png" alt="US cost of living analysis map preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>2023 U.S. Cost of Living Analysis</h3>
+							<p>Analyzed annual living costs and income across 1,877 counties to identify the most affordable locations by family size and average income, using SQL for transformation and Tableau for visualization.</p>
+							<div class="tech-tags"><span class="tech-tag">SQL</span><span class="tech-tag">Tableau</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/2023-us-cost-of-living-analysis" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 15: Gaming Publishers -->
+					<article class="card project-card" id="gaming-sales" data-category="bi">
+						<div class="project-media">
+							<img src="assets/images/gaming_pub_analysis.png" alt="Gaming publishers global sales analysis preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Intelligence</span>
+							<h3>Gaming Publishers Global Sales Analysis</h3>
+							<p>Built a sales analysis and strategy for a fictional start-up gaming company, using a Multiple Regression model to identify factors that positively impact global sales, with a dashboard of top-earning publishers.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Tableau</span></div>
+							<div class="project-footer">
+								<a href="https://github.com/adamchua97/gaming-publisher-global-sales-analysis" class="btn btn-secondary">View Project</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- 16: Beats Externship -->
+					<article class="card project-card" id="beats-extern" data-category="strategy">
+						<div class="project-media">
+							<img src="assets/images/beats_extern.png" alt="Beats by Dr. Dre market analysis presentation preview" />
+						</div>
+						<div class="project-body">
+							<span class="project-tag">Business Strategy</span>
+							<h3>Beats by Dr. Dre Externship — Market Analysis</h3>
+							<p>Analyzed 3,000+ survey responses to assess market demand, pricing, and competitive positioning, delivering a go-to-market strategy and risk assessment for a new premium wireless speaker.</p>
+							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Market Research</span></div>
+							<div class="project-footer">
+								<a href="https://insights-strategy-for-be-t7qh2v5.gamma.site/" class="btn btn-secondary">View Presentation</a>
+							</div>
+							<div class="project-footer" style="margin-top:-6px;">
+								<a href="https://github.com/adamchua97/Beats-by-Dre-Externship-Market-Product-Analyses" class="btn-ghost" style="font-size:0.85rem;font-weight:600;">Related Project Files →</a>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h4>Location</h4>
+					<p>Glendale, CA 91205</p>
+				</div>
+				<div>
+					<h4>Phone</h4>
+					<p><a href="tel:+17472177561">(747) 217-7561</a></p>
+				</div>
+				<div>
+					<h4>Email</h4>
+					<p><a href="mailto:chua.adamadrian@gmail.com">chua.adamadrian@gmail.com</a></p>
+				</div>
+				<div>
+					<h4>Social</h4>
+					<p><a href="https://www.linkedin.com/in/adam-chua/">LinkedIn</a></p>
+					<p><a href="https://github.com/adamchua97">GitHub</a></p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span>© 2026 Adam Adrian Chua</span>
+				<span>Built with plain HTML, CSS &amp; JS</span>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
