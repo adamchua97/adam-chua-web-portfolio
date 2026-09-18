@@ -50,8 +50,8 @@
 			<div class="container">
 				<div class="filter-bar" role="group" aria-label="Filter projects by category">
 					<button class="filter-pill" data-filter="all" aria-pressed="true">All Projects</button>
-					<button class="filter-pill" data-filter="data-engineering" aria-pressed="false">Data Engineering</button>
-					<button class="filter-pill" data-filter="ml-nlp" aria-pressed="false">Machine Learning &amp; NLP</button>
+					<button class="filter-pill" data-filter="data-engineering" aria-pressed="false">Data Modeling &amp; Engineering</button>
+					<button class="filter-pill" data-filter="ml-nlp" aria-pressed="false">Machine Learning</button>
 					<button class="filter-pill" data-filter="bi" aria-pressed="false">Business Intelligence</button>
 					<button class="filter-pill" data-filter="strategy" aria-pressed="false">Business Strategy</button>
 				</div>
@@ -64,7 +64,7 @@
 							<img src="assets/images/dwh_architecture_drawio.png" alt="Medallion architecture diagram for the SQL data warehouse project" />
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Data Engineering</span>
+							<span class="project-tag">Data Modeling &amp; Engineering</span>
 							<h3>SQL Data Warehouse for BI &amp; Analytics</h3>
 							<p>End-to-end SQL data warehouse built on Medallion Architecture: Bronze (raw ingestion), Silver (cleansing), and Gold (business-ready star schema) layers, with ETL pipelines and fact/dimension tables optimized for analytical queries.</p>
 							<div class="tech-tags"><span class="tech-tag">MS SQL</span><span class="tech-tag">ETL</span><span class="tech-tag">Star Schema</span></div>
@@ -80,9 +80,9 @@
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg>
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Data Engineering</span>
+							<span class="project-tag">Data Modeling &amp; Engineering</span>
 							<h3>Supply Chain Database Design &amp; Data Modeling</h3>
-							<p>Owned Phase 1 (data prep, business rules, ER modeling) of a graduate database design project, designing an 11-entity relational schema for a 180,000-row global supply chain dataset in MySQL Workbench.</p>
+							<p>Designed an 11-entity relational schema for a 180,000-row global supply chain dataset, taking it from a raw 53-column export through data preparation, business rules, and ER modeling in MySQL Workbench.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">MySQL Workbench</span><span class="tech-tag">Data Modeling</span></div>
 							<div class="project-footer">
 								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -90,12 +90,12 @@
 							<div class="project-details" hidden>
 								<div class="project-details-inner">
 									<ul>
-										<li>Led end-to-end data preparation in Python/Jupyter for a 53-column dataset, resolving encoding errors and standardizing schema conventions.</li>
-										<li>Diagnosed and resolved data ambiguity in financial fields by reverse-engineering calculation logic before finalizing the schema.</li>
+										<li>Started from a raw 53-column dataset and led all data preparation in Python/Jupyter, resolving encoding errors and standardizing schema conventions before any modeling began.</li>
+										<li>Investigated ambiguous financial columns by reverse-engineering their calculation logic, resolving conflicts between overlapping fields before finalizing the schema.</li>
 										<li>Designed a many-to-many junction entity and a database-enforced weak entity relationship (UNIQUE constraint), introducing surrogate keys for entities lacking natural keys.</li>
 										<li>Authored complete business rules and a full data dictionary covering entity integrity, referential integrity, cardinality, and data type standards.</li>
 									</ul>
-									<div class="project-result"><strong>Result:</strong> Reduced the dataset from 53 to 42 columns with zero information loss, and delivered a complete handoff package that became the foundation for the team's database, warehouse, and BI deliverables.</div>
+									<div class="project-result"><strong>Result:</strong> Reduced the dataset from 53 to 42 columns with zero information loss, and delivered a complete ER model, business rules, and data dictionary ready for downstream database and warehouse implementation.</div>
 								</div>
 							</div>
 						</div>
@@ -107,7 +107,7 @@
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="4" height="8"/><rect x="10" y="7" width="4" height="13"/><rect x="16" y="3" width="4" height="17"/></svg>
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>German Credit Risk Classification</h3>
 							<p>Built and evaluated three classification models (logistic regression, decision tree, neural network) in R to predict credit risk under a cost-sensitive framework, as lead technical contributor on a graduate data mining case study.</p>
 							<div class="tech-tags"><span class="tech-tag">R</span><span class="tech-tag">caret</span><span class="tech-tag">Cost-Sensitive ML</span></div>
@@ -134,7 +134,7 @@
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>Reddit NLP Preprocessing Pipeline</h3>
 							<p>Designed and built a two-stage text preprocessing pipeline (Python, pandas, spaCy, NLTK) that transformed ~720,000 raw, noisy Reddit records into ~507,000 clean, analysis-ready records for a graduate text-mining project.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">spaCy</span><span class="tech-tag">NLTK</span></div>
@@ -161,7 +161,7 @@
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21l4-4h5"/></svg>
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>Reddit Sentiment Analysis</h3>
 							<p>Applied and evaluated four sentiment analysis methods (TextBlob, VADER, Twitter-RoBERTa, multilingual BERT) across a 498,147-comment Reddit corpus as the sentiment analysis component owner on a graduate text-mining project.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Hugging Face</span></div>
@@ -188,7 +188,7 @@
 							<img src="assets/images/dept_att.png" alt="Employee attrition analysis dashboard preview" />
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>Employee Attrition Analysis</h3>
 							<p>Analyzed employee attrition data to identify turnover factors using Python and Spark on AWS for big-data analytics and predictive modeling (Logistic Regression, Random Forest, K-Means Clustering), summarized into strategies to help HR address attrition risk.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Spark</span><span class="tech-tag">AWS</span></div>
@@ -204,7 +204,7 @@
 							<img src="assets/images/bin_bal_classifier.png" alt="Crypto classifier model output preview" />
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>Crypto Investing Recommender Algorithms</h3>
 							<p>Applied and compared various machine learning algorithms to classify and predict price surges (and precursor states) in cryptocurrencies, to support smart, timely investment decision-making.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Scikit-Learn</span></div>
@@ -220,7 +220,7 @@
 							<img src="assets/images/boeing_txt.png" alt="Boeing aircraft corrosion text mining analysis preview" />
 						</div>
 						<div class="project-body">
-							<span class="project-tag">Machine Learning &amp; NLP</span>
+							<span class="project-tag">Machine Learning</span>
 							<h3>Boeing Text Mining Project</h3>
 							<p>Developed a text mining analysis using a large language model to derive insights from aircraft maintenance records focused on corrosion data, highlighting corrosion distribution across aircraft structures.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">LLM</span></div>
