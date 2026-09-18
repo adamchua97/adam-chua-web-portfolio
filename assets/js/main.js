@@ -1,4 +1,4 @@
-// Adam Chua — Portfolio. Vanilla JS, no dependencies.
+// Adam Chua: Portfolio. Vanilla JS, no dependencies.
 
 document.addEventListener("DOMContentLoaded", function () {
   initNavToggle();
