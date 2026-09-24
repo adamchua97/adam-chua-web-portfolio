@@ -8,7 +8,7 @@ Personal portfolio site for Adam Chua, Data & IT professional and MS in Business
 
 - `index.html`: home page
 - `about.html`: professional summary, experience, education, skills, certifications, awards
-- `projects.html`: filterable grid of 16 data/analytics/BI projects
+- `projects.html`: filterable grid of 15 data/analytics/BI projects
 - `assets/css/style.css`: single stylesheet (design tokens + components)
 - `assets/js/main.js`: mobile nav toggle, project filtering, case-study expand/collapse
 - `assets/images/`: project screenshots and profile photo
