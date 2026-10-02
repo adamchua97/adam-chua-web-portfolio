@@ -341,20 +341,6 @@ p { color: var(--text-muted); }
 .details-toggle svg { width: 14px; height: 14px; transition: transform 0.2s ease; }
 .details-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 
-.project-details {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.25s ease;
-}
-.project-details[hidden] { display: grid; }
-.project-card.is-open .project-details { grid-template-rows: 1fr; }
-.project-details-inner {
-  overflow: hidden;
-  padding: 0 22px;
-}
-.project-card.is-open .project-details-inner {
-  padding: 0 22px 20px;
-}
 .project-details ul {
   display: flex;
   flex-direction: column;
