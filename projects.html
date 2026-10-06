@@ -233,10 +233,22 @@
 						<div class="project-body">
 							<span class="project-tag">Machine Learning</span>
 							<h3>Crypto Investing Recommender Algorithms</h3>
-							<p>Applied and compared various machine learning algorithms to classify and predict price surges (and precursor states) in cryptocurrencies, to support smart, timely investment decision-making.</p>
+							<p>Built a proof-of-concept pipeline that mines Coinbase order-book data for price-surge precursors and compares machine learning classifiers for predicting them.</p>
 							<div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Scikit-Learn</span></div>
 							<div class="project-footer">
 								<a href="https://github.com/adamchua97/crypto-market-machine-learning" class="btn btn-secondary">View Project</a>
+								<button class="details-toggle" aria-expanded="false">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+							</div>
+							<div class="project-details" hidden>
+								<div class="project-details-inner">
+									<ul>
+										<li>Mined 13 months of Coinbase order-book data (303,127 snapshots from 300+ daily CSVs) for quiet or falling price stretches (precursors) that were immediately followed by a sustained upward move (a surge).</li>
+										<li>Engineered features per episode (duration, cumulative price change, buy/ask capital and volume momentum) and labeled whether each surge cleared the precursor's prior peak by more than 0.74%: 5,730 pairs, only 1.8% positive.</li>
+										<li>Handled the class imbalance with ADASYN oversampling and compared seven classifiers, including Balanced Random Forest, RUSBoost, and a soft-voting ensemble.</li>
+										<li>Found precursor length and cumulative price change to be the strongest predictors (about 44% combined importance).</li>
+									</ul>
+									<div class="project-result"><strong>Status:</strong> Proof of concept, not a trading model. Preliminary held-out scores (K-Nearest Neighbors 93.1% accuracy, Balanced Random Forest 83.6% balanced accuracy) are unvalidated: oversampling before the train/test split and a timestamp feature under a random split risk leakage, so a leakage-free re-run is the next step.</div>
+								</div>
 							</div>
 						</div>
 					</article>
